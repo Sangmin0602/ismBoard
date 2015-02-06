@@ -7,6 +7,7 @@ import ism.web.board.model.UserVO;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -23,6 +24,7 @@ import org.json.simple.JSONObject;
 public class UserLogin implements IAction {
 
 	private String getContextPath(BoardContext ctx) {
+		System.out.println(new Date());
 		return ctx.getServletContextPath();
 	}
 	@Override
